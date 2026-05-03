@@ -1,1 +1,861 @@
+Promt : vous etre un expert en entrainement en rugby est vous trvzillez sur le diagnodtisue des prestations es joueurs pour elabrer des projets de transformation en entrainelent ? etabli 10 PROPOSITION DE SUJETS QUI TRADUISENT CETT FNCTION DE LEXPERT POUR. LE SUJET CONSISTE A ETABLIR UNE APPLI HTML POUR TRADUIR DES DONNEE DE DIAGNOSTIQUE EN PRISE DE DICISION . LA PRISE D INFORMATION DOIT ETRE COLLECTE PAR LE TRAINEUR EN PRATIQUE PAR LINTARNEDIARE D UNE GRILLE D OBSERVATION 
+Très bon axe - là on est clairement sur une posture d'expert : diagnostiquer ? interpréter ? décider ? transformer en entraînement, avec en plus une traduction numérique (appli HTML).
+Je te propose 10 sujets solides, chacun formulé comme un projet d'application utilisable par un entraîneur sur le terrain, à partir d'une grille d'observation.
 
+10 SUJETS - Appli HTML : Diagnostic ? Décision en Rugby (10-15 ans)
+
+1. Appli "Choix du porteur de balle"
+* Données collectées : 
+o Type de décision : passer / garder / contourner 
+o Résultat : gain / perte / neutralisation 
+* Traitement : 
+o % de bons choix selon contexte 
+* Décision automatique : 
+o Travail "lecture du défenseur" ou "jeu en surnombre" 
+* Sortie appli : 
+o Profil du joueur + axes prioritaires d'entraînement 
+
+2. Appli "Efficacité offensive collective"
+* Données : 
+o Nombre de franchissements 
+o Zones utilisées (axe / large) 
+* Traitement : 
+o Type de jeu dominant 
+* Décision : 
+o Orienter vers pénétration / évitement / alternance 
+* Sortie : 
+o Proposition de situations d'entraînement adaptées 
+
+3. Appli "Continuité du jeu"
+* Données : 
+o Nombre de phases jouées sans perte 
+o Causes des pertes (contact, passe...) 
+* Traitement : 
+o Indice de continuité 
+* Décision : 
+o Travail soutien / conservation / technique de passe 
+
+4. Appli "Performance physique en match"
+* Données : 
+o Nombre de sprints 
+o Intensité perçue / récupération 
+* Traitement : 
+o Profil physique (explosif / endurant / en difficulté) 
+* Décision : 
+o Programme physique individualisé (RSA, vitesse, endurance) 
+
+5. Appli "Efficacité au contact"
+* Données : 
+o Plaquages réussis / ratés 
+o Ballons gagnés / perdus au contact 
+* Traitement : 
+o Ratio efficacité contact 
+* Décision : 
+o Travail technique + renforcement physique spécifique 
+
+6. Appli "Organisation défensive"
+* Données : 
+o Alignement respecté ou non 
+o Montée défensive 
+* Traitement : 
+o Indice de cohérence défensive 
+* Décision : 
+o Mise en place de situations de ligne défensive 
+
+7. Appli "Utilisation des espaces"
+* Données : 
+o Zones de jeu exploitées 
+o Nombre de passes vers l'extérieur 
+* Traitement : 
+o Largeur du jeu 
+* Décision : 
+o Travail jeu au large / fixation 
+
+8. Appli "Engagement et activité du joueur"
+* Données : 
+o Nombre d'actions (courses, soutiens, interventions) 
+* Traitement : 
+o Indice d'activité 
+* Décision : 
+o Travail implication / déplacements sans ballon 
+
+9. Appli "Rôles sociaux (arbitrage / observation)"
+* Données : 
+o Qualité des décisions arbitrales 
+o Fiabilité des observations 
+* Traitement : 
+o Niveau de maîtrise des rôles 
+* Décision : 
+o Formation arbitrage / responsabilisation 
+
+10. Appli "Profil global joueur (tableau de bord)"
+* Données : 
+o Toutes les données précédentes combinées 
+* Traitement : 
+o Profil complet (offensif / défensif / physique) 
+* Décision : 
+o Plan d'entraînement individualisé 
+* Sortie : 
+o Fiche joueur automatique + recommandations 
+
+Structure commune de l'appli HTML (important pour ton projet)
+Chaque sujet peut suivre ce modèle :
+1. Interface saisie (coach terrain)
+* Cases à cocher / boutons rapides 
+* Données simples (clic ? pas de texte long) 
+2. Traitement automatique
+* Calculs (% / ratios / indices) 
+* Comparaison à des seuils 
+3. Sortie décisionnelle
+* Diagnostic clair 
+* Axes d'entraînement proposés 
+* Niveau du joueur (A / B / C) 
+
+Promt : PLUS DE DETAILLE POUR LE SUJET 4
+Parfait, on développe le SUJET 4 comme un vrai projet d'expert, exploitable en terrain + appli HTML.
+
+SUJET 4 - Appli "Performance physique en match"
+Objectif
+Transformer des observations terrain simples en diagnostic physique puis en décisions d'entraînement individualisées chez des joueurs de 10-15 ans.
+
+1. LOGIQUE EXPERT (fil conducteur)
+Observer ? Quantifier ? Interpréter ? Décider ? S'entraîner
+
+2. GRILLE D'OBSERVATION TERRAIN (collecte coach)
+?? Saisie simple pendant ou après match (coché / compté)
+A. Activité intense
+* Nombre de sprints réalisés 
+* Nombre de courses à haute intensité 
+* Capacité à se replacer rapidement 
+B. Répétition des efforts
+* Le joueur : 
+o ? maintient son intensité 
+o ? baisse légèrement 
+o ? s'effondre physiquement 
+C. Récupération
+* Temps de retour en position défensive : 
+o ? rapide 
+o ? moyen 
+o ? lent 
+D. Engagement dans le jeu
+* Nombre d'actions impliquant effort : 
+o courses 
+o soutiens 
+o replacements 
+
+3. DONNÉES TRAITÉES PAR L'APPLI
+L'appli transforme les données en indices simples :
+Indice 1 : Volume d'activité
+* Total des courses / sprints 
+Indice 2 : Intensité
+* Proportion d'efforts rapides 
+Indice 3 : Endurance spécifique
+* Capacité à répéter les efforts 
+Indice 4 : Récupération
+* Vitesse de replacement 
+
+4. PROFILS AUTOMATIQUES GÉNÉRÉS
+L'appli classe le joueur :
+?? Profil 1 : Explosif mais non endurant
+* Beaucoup de sprints 
+* Chute rapide d'intensité
+?? Décision : travail RSA (répétition de sprints) 
+
+?? Profil 2 : Endurant mais peu intense
+* Activité constante 
+* Peu d'accélérations
+?? Décision : travail vitesse + explosivité 
+
+?? Profil 3 : Équilibré
+* Bonne intensité + bonne répétition
+?? Décision : maintien + complexification (avec ballon) 
+
+?? Profil 4 : En difficulté physique
+* Peu d'activité + récupération lente
+?? Décision : travail progressif + remise en confiance 
+
+5. DÉCISIONS D'ENTRAÎNEMENT AUTOMATIQUES
+L'appli propose directement :
+Exemple :
+Si "Explosif non endurant" :
+* Séances : 
+o 6 × 20 m (récup courte) 
+o Jeux intermittents (15/15) 
+o Sprints répétés avec ballon 
+
+Si "Endurant peu intense" :
+* Séances : 
+o Départs explosifs 
+o 1c1 vitesse 
+o Courses avec changement de rythme 
+
+Si "En difficulté" :
+* Séances : 
+o Parcours moteurs simples 
+o Efforts courts + récupération longue 
+o Jeux sans opposition forte 
+
+6. STRUCTURE DE L'APPLI HTML
+
+A. Interface coach (terrain)
+* Boutons : 
+o ? sprint 
+o ? course 
+* Cases à cocher : 
+o Intensité maintenue / baisse / chute 
+o Récup rapide / moyenne / lente 
+
+B. Traitement automatique (JavaScript)
+* Calcul : 
+o total efforts 
+o ratio intensité 
+* Attribution profil automatique 
+
+C. Sortie affichée
+* ?? Profil physique 
+* ?? Niveau (faible / moyen / bon) 
+* ?? Recommandations d'entraînement 
+
+7. EXEMPLE SIMPLIFIÉ DE CODE (structure)
+<button onclick="addSprint()">Sprint</button>
+<p id="sprints">0</p>
+
+<script>
+let sprints = 0;
+
+function addSprint() {
+  sprints++;
+  document.getElementById("sprints").innerText = sprints;
+}
+
+function analyser() {
+  if (sprints > 10) {
+    alert("Profil explosif");
+  } else {
+    alert("Profil à développer");
+  }
+}
+</script>
+
+8. CE QUI FAIT LA QUALITÉ DU PROJET
+* Données simples à recueillir en match réel 
+* Traitement automatique (gain de temps coach) 
+* Résultat = décision concrète d'entraînement 
+* Adapté à jeunes joueurs (sécurité + progressivité) 
+
+9. PROLONGEMENTS POSSIBLES
+* Historique des joueurs (suivi progression) 
+* Graphiques d'évolution 
+* Comparaison avant / après cycle 
+* Export fiche joueur 
+
+10. PROBLÉMATIQUE POSSIBLE (si travail scolaire)
+?? Comment une application HTML peut-elle transformer des observations terrain en décisions d'entraînement physique adaptées chez de jeunes rugbymen ?
+
+Si tu veux, je peux maintenant :
+?? te créer l'application complète prête à utiliser (HTML + CSS + JS)
+?? ou transformer ça en dossier projet type bac / STAPS / EPS
+Promt ETABLI UN BENCHMARK EN LIGENE
+Très bonne étape : faire un benchmark en ligne permet de positionner ton appli comme un outil innovant d'aide à la décision, et pas juste un compteur de données.
+Je te propose un benchmark structuré (niveau expert) orienté :
+?? collecte terrain ? analyse ? décision d'entraînement
+
+BENCHMARK - Outils digitaux rugby / sport (diagnostic & performance)
+
+1. Hudl
+?? Positionnement
+Analyse vidéo + performance (très utilisé en sport collectif)
+?? Points forts
+* Analyse vidéo détaillée 
+* Statistiques de match 
+* Suivi joueur 
+? Limites
+* Peu adapté aux jeunes (10-15 ans) 
+* Nécessite vidéo (pas terrain instantané) 
+* Pas de décision pédagogique automatique 
+?? Conclusion :
+Ton appli est plus rapide, terrain, décisionnelle
+
+2. Coach's Eye
+?? Positionnement
+Analyse technique via vidéo ralentie
+?? Points forts
+* Visualisation précise du geste 
+* Feedback visuel intéressant 
+? Limites
+* Pas de collecte de données en direct 
+* Pas de lien avec entraînement physique 
+* Pas d'automatisation décisionnelle 
+?? Conclusion :
+Outil technique ? outil d'aide à la décision globale
+
+3. Rugby Coach Weekly
+?? Positionnement
+Bibliothèque de séances rugby
+?? Points forts
+* Contenus riches (exercices) 
+* Adapté aux entraîneurs 
+? Limites
+* Pas de diagnostic joueur 
+* Pas personnalisé 
+* Pas basé sur données terrain 
+?? Conclusion :
+Ton appli = personnalisation + adaptation
+
+4. TeamBuildr
+?? Positionnement
+Préparation physique (musculation / suivi)
+?? Points forts
+* Programmes individualisés 
+* Suivi de progression 
+? Limites
+* Hors contexte jeu réel 
+* Peu adapté jeunes rugby 
+* Pas basé sur observation match 
+?? Conclusion :
+Ton projet relie jeu réel ? physique
+
+5. Catapult Sports
+?? Positionnement
+Analyse GPS / performance pro
+?? Points forts
+* Données très précises (vitesse, distance) 
+* Analyse poussée 
+? Limites
+* Très coûteux 
+* Inaccessible en milieu scolaire 
+* Complexe à exploiter 
+?? Conclusion :
+Ton appli = version simplifiée et pédagogique
+
+6. MyCoach Sport
+?? Positionnement
+Gestion équipe / suivi joueurs
+?? Points forts
+* Organisation équipe 
+* Suivi global 
+? Limites
+* Peu d'analyse fine performance 
+* Pas orienté décision d'entraînement 
+?? Conclusion :
+Gestion ? diagnostic terrain
+
+SYNTHÈSE DU BENCHMARK
+Outil
+Collecte terrain directe
+Analyse auto
+Décision entraînement
+Adapté jeunes
+Hudl
+?
+??
+?
+?
+Coach's Eye
+?
+??
+?
+??
+Rugby Coach Weekly
+?
+?
+??
+??
+TeamBuildr
+?
+??
+??
+??
+Catapult
+??
+??
+??
+?
+MyCoach
+?
+?
+?
+??
+TON APPLI
+??
+??
+??
+??
+
+POSITIONNEMENT DE TON APPLI (TRÈS IMPORTANT)
+?? Ton projet se distingue par :
+? 1. Collecte simple terrain (sans technologie lourde)
+? 2. Traitement automatique immédiat
+? 3. Traduction directe en entraînement
+? 4. Adaptation aux jeunes (10-15 ans)
+? 5. Logique pédagogique EPS / éducative
+
+CONCLUSION EXPERT
+Aucun outil existant ne combine :
+?? Observation terrain simple + analyse + décision pédagogique immédiate
+?? Ton appli est donc :
+INNOVANTE À L'ÉCHELLE PÉDAGOGIQUE
+(et non technologique pure)
+
+PROLONGEMENT (si dossier à rendre)
+?? Tu peux formuler :
+Problématique :
+En quoi une application simple basée sur l'observation terrain peut-elle être plus efficace qu'un outil technologique complexe dans l'entraînement de jeunes rugbymen ?
+
+Si tu veux, je peux maintenant :
+?? transformer ce benchmark en diapos PowerPoint prêt à présenter
+?? ou en rédaction type dossier (niveau Bac / STAPS)
+Prompt APPROFONDI LES CRITERES A RELEVER SUR LE PLAN PHYSIQUE SACHANT LE POSSIBILITE D ENREGISTER LE MATCH
+Très bonne évolution : dès que tu peux filmer/enregistrer le match, tu passes d'une observation "à chaud" limitée à une analyse fine et objectivée.
+L'enjeu d'expert devient : choisir les bons critères physiques (utiles au jeu) et exploitables en vidéo sans matériel pro.
+Je te propose une structuration niveau expert, directement intégrable dans ton appli.
+
+CRITÈRES PHYSIQUES À RELEVER (AVEC VIDÉO MATCH)
+?? Objectif : relier activité physique réelle ? efficacité en jeu
+
+1. ACTIVITÉ DE COURSE (VOLUME)
+?? Ce que tu observes (vidéo)
+* Nombre de courses totales 
+* Nombre de courses utiles (vers ballon / soutien / défense) 
+?? Indicateur
+* Volume d'activité 
+?? Lecture expert
+* Beaucoup courir ? être efficace
+?? Croiser avec utilité des déplacements 
+
+2. INTENSITÉ DES DÉPLACEMENTS
+?? À coder en vidéo
+* Marche / trot / course rapide / sprint 
+?? Indicateur
+* % d'efforts à haute intensité 
+?? Lecture
+* Un joueur efficace en rugby = pics d'intensité courts mais répétés 
+
+3. SPRINTS (QUALITÉ + QUANTITÉ)
+?? À relever
+* Nombre de sprints 
+* Moment du sprint (attaque / défense) 
+?? Indicateurs
+* Fréquence 
+* Impact (franchissement ? rattrapage ? inutile ?) 
+?? Lecture expert
+?? Sprint utile = décisif
+?? Sprint inutile = dépense énergétique inefficace
+
+4. RÉPÉTITION DES EFFORTS (RSA)
+?? À observer
+* Séquences de plusieurs courses rapprochées 
+?? Indicateur
+* Capacité à enchaîner : 
+o sprint ? replacement ? sprint 
+?? Lecture
+?? Critère clé du rugby moderne
+?? Différencie joueur "présent" vs "effacé"
+
+5. TEMPS DE REPLACEMENT DÉFENSIF
+?? Vidéo
+* Temps entre perte de balle ? retour en défense 
+?? Indicateur
+* Rapide / moyen / lent (ou en secondes) 
+?? Lecture
+?? Impact direct sur essais encaissés
+
+6. ENGAGEMENT AU CONTACT (PHYSIQUE)
+?? À relever
+* Nombre de contacts (plaquages / collisions) 
+* Issue : 
+o gagnée / subie / neutre 
+?? Indicateur
+* Efficacité physique au duel 
+?? Lecture
+?? Lien direct avec :
+* gainage 
+* puissance 
+* technique 
+
+7. STABILITÉ / ÉQUILIBRE AU CONTACT
+?? Vidéo
+* Le joueur : 
+o reste debout 
+o tombe rapidement 
+o est déséquilibré 
+?? Indicateur
+* Contrôle corporel 
+?? Lecture
+?? Très révélateur du niveau physique réel
+
+8. ACTIVITÉ SANS BALLON
+?? À observer
+* Courses de soutien 
+* Appels 
+* Replacement 
+?? Indicateur
+* Implication physique 
+?? Lecture
+?? Joueur "invisible" = problème physique ou cognitif
+
+9. TEMPS D'INACTIVITÉ
+?? Vidéo
+* Temps passé à marcher / ne rien faire 
+?? Indicateur
+* Ratio activité / inactivité 
+?? Lecture
+?? Permet d'identifier :
+* fatigue 
+* manque d'engagement 
+
+10. ÉVOLUTION AU FIL DU MATCH
+?? Comparer :
+* Début vs fin de match 
+?? Indicateur
+* Chute de performance 
+?? Lecture expert
+?? Indice clé de :
+* endurance 
+* gestion effort 
+
+11. VITESSE D'EXÉCUTION (PRISE D'INFO ? ACTION)
+?? Vidéo
+* Temps entre réception du ballon ? action 
+?? Indicateur
+* Rapidité d'exécution 
+?? Lecture
+?? Lié au physique + cognitif
+
+12. EFFICACITÉ ÉNERGÉTIQUE (TRÈS IMPORTANT)
+?? Croisement des données :
+* activité physique 
+* efficacité réelle 
+?? Indicateur
+* Joueur : 
+o actif ET efficace 
+o actif MAIS inefficace 
+o peu actif MAIS efficace 
+?? C'est le critère d'expert
+
+STRUCTURATION POUR TON APPLI HTML
+
+1. Interface de codage vidéo
+* Boutons rapides : 
+o Sprint 
+o Course 
+o Contact 
+o Replacement 
+* Timeline simple (minute du match) 
+
+2. Traitement automatique
+L'appli calcule :
+* nombre de sprints 
+* ratio intensité 
+* temps d'inactivité 
+* efficacité contact 
+
+3. PROFILS GÉNÉRÉS
+?? Actif et efficace
+?? maintien + complexification
+?? Actif mais inefficace
+?? travail technique + choix
+?? Peu actif mais efficace
+?? travail engagement physique
+?? Peu actif et inefficace
+?? priorité physique globale
+
+CE QUI FAIT LA DIFFÉRENCE (NIVEAU EXPERT)
+?? Tu ne mesures pas juste :
+* vitesse 
+* endurance 
+?? Tu mesures :
+L'UTILITÉ DU PHYSIQUE DANS LE JEU
+
+PROLONGEMENT IDÉAL
+?? Ajouter :
+* ralenti vidéo 
+* tagging automatique (clic sur action) 
+* export profil joueur 
+
+PROBLÉMATIQUE HAUT NIVEAU
+?? Comment l'analyse vidéo peut-elle permettre de transformer des données physiques en décisions d'entraînement réellement efficaces en rugby chez les jeunes ?
+
+Si tu veux, prochaine étape logique :
+?? je peux te créer une grille de codage vidéo prête à imprimer + version intégrée dans l'appli HTML
+Prompt : DONNER MOI exemple des critères a observé pour chaque rugbyman en vedio de match réel sous forme de grille
+Parfait - on va passer sur un outil d'expert directement utilisable en analyse vidéo : une grille individuelle par joueur, pensée pour être simple à coder pendant le visionnage mais suffisamment riche pour générer ensuite des décisions d'entraînement physique.
+
+GRILLE D'OBSERVATION VIDÉO - PROFIL PHYSIQUE RUGBY (10-15 ans)
+Nom joueur : ____________________
+Match : ____________________
+Durée observée : __________
+
+1. ACTIVITÉ DE COURSE (VOLUME)
+Critère
+Codage
+Résultat
+Nombre total de courses
+Compter
+____
+Courses utiles (soutien / défense)
+Compter
+____
+% courses utiles
+Calcul
+____ %
+
+2. INTENSITÉ DES DÉPLACEMENTS
+Critère
+Codage (cocher à chaque action)
+Total
+Marche
+? ? ? ? ?
+____
+Trot
+? ? ? ? ?
+____
+Course rapide
+? ? ? ? ?
+____
+Sprint
+? ? ? ? ?
+____
+?? Indice intensité = (course rapide + sprint) / total
+
+3. SPRINTS (UTILITÉ)
+Critère
+Codage
+Résultat
+Nombre de sprints
+Compter
+____
+Sprint utile (franchissement / défense)
+? ? ?
+____
+Sprint inutile
+? ? ?
+____
+
+4. RÉPÉTITION DES EFFORTS
+Critère
+Codage
+Résultat
+Enchaînement sprint ? replacement ? sprint
+? Oui ? Non
+____
+Nombre de séquences répétées
+Compter
+____
+
+5. REPLACEMENT DÉFENSIF
+Critère
+Codage
+Résultat
+Retour rapide
+?
+
+Retour moyen
+?
+
+Retour lent
+?
+
+
+6. CONTACT (ENGAGEMENT PHYSIQUE)
+Critère
+Codage
+Résultat
+Nombre de contacts
+Compter
+____
+Contact gagné
+? ? ?
+____
+Contact subi
+? ? ?
+____
+
+7. STABILITÉ AU CONTACT
+Critère
+Codage
+Résultat
+Reste debout après contact
+? ? ?
+____
+Tombe rapidement
+? ? ?
+____
+Déséquilibré
+? ? ?
+____
+
+8. ACTIVITÉ SANS BALLON
+Critère
+Codage
+Résultat
+Courses de soutien
+? ? ?
+____
+Appels de balle
+? ? ?
+____
+Replacement actif
+? ? ?
+____
+
+9. TEMPS D'INACTIVITÉ
+Critère
+Codage
+Résultat
+Temps sans action (>5 sec)
+Compter
+____
+Fréquence d'inactivité
+? faible ? moyenne ? élevée
+
+
+10. ÉVOLUTION DANS LE MATCH
+Critère
+Codage
+Résultat
+Intensité début match
+? forte ? moyenne ? faible
+
+Intensité fin match
+? forte ? moyenne ? faible
+
+Chute de performance
+? oui ? non
+
+
+SYNTHÈSE AUTOMATISABLE (à intégrer dans ton appli)
+Profil physique du joueur :
+* ? Actif et efficace 
+* ? Actif mais inefficace 
+* ? Peu actif mais efficace 
+* ? Peu actif et en difficulté 
+
+INTERPRÉTATION (GUIDE COACH)
+Si :
+* Peu de sprints ? ?? travail vitesse 
+* Chute en fin de match ? ?? endurance spécifique 
+* Contacts subis ? ?? gainage + puissance 
+* Peu d'activité ? ?? engagement / volume de jeu 
+* Beaucoup d'activité inefficace ? ?? économie d'effort 
+
+POINT FORT DE CETTE GRILLE
+? Utilisable en vidéo simple (sans technologie)
+? Données directement exploitables
+? Lien immédiat avec décision d'entraînement
+? Compatible avec appli HTML (boutons / compteurs)
+
+Si tu veux, prochaine étape :
+?? je peux transformer cette grille en interface cliquable HTML (comme une vraie appli terrain)
+?? ou en version tablette optimisée (gros boutons pour coder en direct)
+Prompt : produit un grille d'observation exploitable sur classe de 30 élevés 
+D'accord - là on change d'échelle : 30 élèves, donc il faut une grille rapide, lisible, mutualisable, et surtout utilisable par des élèves observateurs (pas seulement par l'enseignant).
+?? Objectif :
+Observer efficacement 1 joueur en peu de temps ? produire une décision simple
+
+GRILLE D'OBSERVATION TERRAIN (CLASSE 30 ÉLÈVES)
+Rugby - Axe physique (10-15 ans)
+?? Organisation conseillée :
+* 6 matchs de 5 élèves (ou 5c5 / 6c6) 
+* 1 observateur par joueur 
+* Rotation des rôles 
+
+FICHE INDIVIDUELLE (1 élève observé)
+Nom observé : ____________________
+Observateur : ____________________
+Match n° : ______
+
+1. ACTIVITÉ PHYSIQUE GLOBALE
+Critère
+Codage simple
+Nombre de courses
+? ? ? ? ?
+Se rend disponible (soutien)
+? ? ?
+Se replace en défense
+? ? ?
+?? Lecture :
+* Peu de cases cochées = manque d'activité 
+
+2. INTENSITÉ DES EFFORTS
+Critère
+Codage
+Marche / lent
+Course moyenne
+Sprint
+?? Lecture :
+* Peu de sprints = manque d'intensité 
+
+3. RÉPÉTITION DES EFFORTS
+Critère
+Codage
+Enchaîne plusieurs courses
+? ? ?
+S'arrête après effort
+? ? ?
+?? Lecture :
+* S'arrête souvent = manque d'endurance 
+
+4. REPLACEMENT DÉFENSIF
+Critère
+Codage
+Revient vite défendre
+? ? ?
+Revient lentement
+? ? ?
+
+5. ENGAGEMENT PHYSIQUE (CONTACT)
+Critère
+Codage
+Va au contact
+? ? ?
+Évite le contact
+? ? ?
+
+6. STABILITÉ CORPORELLE
+Critère
+Codage
+Reste debout
+? ?
+Tombe facilement
+? ?
+
+SYNTHÈSE RAPIDE (À COCHER)
+?? L'observateur choisit 1 profil
+? Très actif et intense
+? Actif mais peu intense
+? Peu actif
+? En difficulté physique
+
+DÉCISION D'ENTRAÎNEMENT (GUIDÉE)
+?? Cocher 1 priorité :
+? Courir plus (activité)
+? Courir plus vite (vitesse)
+? Tenir plus longtemps (endurance)
+? Être plus solide (contact / gainage)
+
+FORMAT CLASSE (TRÈS IMPORTANT)
+?? Pourquoi cette grille fonctionne :
+* Codage par croix (rapide) 
+* Pas de chiffres compliqués 
+* Observation possible par élèves 
+* Exploitation immédiate 
+
+ORGANISATION AVEC 30 ÉLÈVES
+Rotation :
+* 20 joueurs 
+* 10 observateurs 
+* Puis inversion 
+
+CONSIGNES ÉLÈVES (à dire en classe)
+?? "Tu observes :
+* Est-ce qu'il court ? 
+* Est-ce qu'il court vite ? 
+* Est-ce qu'il recommence ? 
+* Est-ce qu'il s'engage ?" 
+
+VERSION EXPERT (si tu veux aller plus loin)
+?? Ajouter un code couleur :
+*  faible 
+*  moyen 
+*  Bon.
