@@ -1,0 +1,468 @@
+================================================================
+PROMPT — DÉPLOIEMENT FINAL DE L’APPLICATION RUGBY U15 — ADP 2026
+================================================================
+
+Tu es un développeur web spécialisé en applications pédagogiques EPS.
+Tu vas finaliser mon application « Rugby U15 » pour qu’elle soit
+DÉPLOYABLE SUR GITHUB PAGES, 100 % autonome, utilisable hors connexion
+et réellement exploitable par n’importe quel enseignant d’EPS ou éducateur
+rugby U15.
+
+IMPORTANT :
+Mon application est déjà fonctionnelle. Ne la reconstruis pas à zéro.
+Ne change pas la logique métier déjà validée :
+- fiche d’observation terrain,
+- import CSV,
+- analyse individuelle,
+- profils joueurs,
+- décisions d’entraînement individuelles détaillées,
+- ajout des joueurs à l’équipe,
+- analyse collective,
+- décisions d’entraînement collectives,
+- vidéos démonstratives,
+- mode d’emploi,
+- export des fiches et bilans.
+
+Ton rôle est uniquement de préparer la version finale pour le déploiement,
+en améliorant l’architecture, la sauvegarde, les exports, l’import/export
+de session, la compatibilité mobile et la documentation utilisateur.
+
+----------------------------------------------------------------
+1. NOM ET OBJECTIF DE L’APPLICATION
+----------------------------------------------------------------
+Le nom affiché dans l’en-tête doit rester uniquement :
+
+Rugby U15
+
+L’application permet de transformer une observation terrain en indicateurs
+pédagogiques exploitables :
+fiche papier → CSV → import dans l’application → analyse individuelle →
+décision d’entraînement individuelle → ajout à l’équipe → analyse collective →
+décision d’entraînement collective → vidéos → bilan.
+
+----------------------------------------------------------------
+2. ARCHITECTURE : 100 % AUTONOME, SANS SERVEUR
+----------------------------------------------------------------
+L’outil doit être entièrement statique :
+- HTML,
+- CSS,
+- JavaScript,
+- fichiers vidéos locaux,
+- fichiers de téléchargement locaux.
+
+Aucune dépendance à un serveur, une base de données externe ou une API
+payante n’est autorisée.
+
+L’application doit fonctionner sur GitHub Pages.
+
+Après chargement, elle doit aussi rester utilisable hors connexion autant
+que possible, notamment pour :
+- consulter l’interface,
+- saisir les observations,
+- analyser les joueurs,
+- ajouter des joueurs à l’équipe,
+- générer les décisions,
+- consulter les données déjà chargées,
+- exporter les résultats.
+
+----------------------------------------------------------------
+3. ORGANISATION DES FICHIERS POUR GITHUB PAGES
+----------------------------------------------------------------
+Préparer une structure propre :
+
+/index.html
+/assets/css/style.css
+/assets/js/app.js
+/assets/videos/
+    collectif_activite.mp4
+    collectif_vitesse.mp4
+    collectif_defense.mp4
+    collectif_contact.mp4
+    collectif_endurance.mp4
+    collectif_lecture.mp4
+/downloads/
+    fiche_observation_rugby_u15.pdf
+    fiche_observation_rugby_u15.jpeg
+    modele_csv_observation_rugby_u15.csv
+/README_DEPLOIEMENT.md
+
+Tous les chemins doivent être relatifs :
+./assets/css/style.css
+./assets/js/app.js
+./assets/videos/...
+./downloads/...
+
+Ne jamais utiliser de chemin absolu commençant par « / ».
+
+Le fichier d’accueil doit s’appeler :
+
+index.html
+
+Il doit être placé à la racine du dépôt pour un déploiement GitHub Pages
+simple.
+
+----------------------------------------------------------------
+4. RESPECT DE LA VERSION FINALE EXISTANTE
+----------------------------------------------------------------
+Conserver les onglets actuels :
+
+1. Mode d’emploi
+2. Aspect individuel
+3. Aspect collectif équipe
+4. Référentiel exercices
+
+Conserver le fonctionnement actuel :
+- importation CSV,
+- collage du CSV en texte,
+- report automatique dans la grille,
+- analyse joueur,
+- génération du profil,
+- décision d’entraînement individuelle détaillée,
+- ajout du joueur à l’équipe,
+- analyse collective,
+- décision collective,
+- vidéos dans la partie collective,
+- export fiche joueur,
+- export bilan collectif.
+
+Ne pas supprimer les décisions d’entraînement détaillées déjà ajoutées :
+- joueur peu actif,
+- joueur actif mais inefficace,
+- sprint peu utile / vitesse,
+- replacement défensif faible,
+- contact difficile,
+- baisse en fin de match.
+
+Chaque fiche individuelle doit conserver :
+- objectif spécifique,
+- organisation,
+- consignes,
+- critères de réussite,
+- variables N1 / N2 / N3,
+- sécurité U15,
+- PPI,
+- dosage,
+- ressources pédagogiques.
+
+Chaque fiche collective doit conserver :
+- organisation,
+- consignes,
+- critères de réussite,
+- variables N1 / N2 / N3,
+- sécurité U15,
+- PPI,
+- dosage,
+- vidéo démonstrative.
+
+----------------------------------------------------------------
+5. DONNÉES LOCALES ET CONFIDENTIALITÉ
+----------------------------------------------------------------
+Chaque enseignant doit utiliser l’application de manière indépendante.
+
+Aucune donnée ne doit être envoyée à l’extérieur.
+Aucun compte n’est requis.
+Aucune connexion n’est requise.
+
+Toutes les données doivent rester stockées localement dans le navigateur
+de l’utilisateur avec localStorage.
+
+Ajouter dans le mode d’emploi un message clair :
+
+« Les données saisies restent confidentielles et sont stockées uniquement
+sur cet appareil. Elles ne sont envoyées à aucun serveur. »
+
+----------------------------------------------------------------
+6. SAUVEGARDE AUTOMATIQUE
+----------------------------------------------------------------
+Mettre en place une sauvegarde automatique dans localStorage pour :
+- données du joueur en cours,
+- grille numérique,
+- intensité début / fin,
+- commentaire coach,
+- liste des joueurs ajoutés à l’équipe,
+- nom de l’équipe,
+- match / séance collective,
+- bilans générés.
+
+La sauvegarde doit se faire automatiquement à chaque modification importante :
+- saisie dans un champ,
+- modification d’un compteur,
+- import CSV,
+- analyse joueur,
+- ajout à l’équipe,
+- suppression d’un joueur,
+- génération de bilan.
+
+Après fermeture ou rechargement de la page, l’enseignant doit retrouver
+son travail.
+
+----------------------------------------------------------------
+7. NOUVELLE SESSION / RÉINITIALISATION
+----------------------------------------------------------------
+Ajouter un bouton visible :
+
+Nouvelle session / Réinitialiser
+
+Ce bouton doit :
+- effacer les données locales de la session actuelle,
+- vider le joueur en cours,
+- vider l’équipe,
+- vider les bilans,
+- remettre les compteurs à zéro.
+
+Avant suppression, afficher une confirmation obligatoire :
+
+« Attention : cette action efface toutes les données de la session actuelle.
+Voulez-vous vraiment continuer ? »
+
+----------------------------------------------------------------
+8. EXPORT ET IMPORT DE SESSION
+----------------------------------------------------------------
+Ajouter deux boutons dans le mode d’emploi ou dans une zone « Gestion de session » :
+
+1. Exporter la session JSON
+2. Importer une session JSON
+
+L’export doit télécharger un fichier JSON contenant :
+- joueur en cours,
+- grille numérique,
+- équipe,
+- profils,
+- décisions,
+- commentaires,
+- bilans,
+- date d’export.
+
+L’import doit permettre de charger un fichier JSON exporté précédemment et
+de restaurer l’application dans le même état.
+
+Prévoir une vérification simple :
+- refuser les fichiers non JSON,
+- vérifier que le fichier contient bien une session Rugby U15,
+- afficher un message d’erreur clair si le fichier est invalide.
+
+----------------------------------------------------------------
+9. EXPORT DES RÉSULTATS EXPLOITABLES
+----------------------------------------------------------------
+Ajouter ou conserver des exports lisibles pour l’enseignant :
+
+A. Export fiche joueur :
+- synthèse individuelle,
+- indices,
+- profil,
+- axes d’entraînement,
+- commentaire coach.
+
+B. Export bilan collectif :
+- liste des joueurs,
+- profils,
+- indices moyens,
+- priorités collectives,
+- axes d’entraînement collectifs.
+
+C. Export CSV des résultats :
+Créer un bouton permettant de télécharger un CSV avec :
+nom_joueur,profil,activite,intensite,sprint_utile,replacement,contact,priorites,commentaire_coach
+
+Utiliser l’encodage UTF-8 avec BOM pour compatibilité Excel et arabe.
+
+D. Impression / PDF :
+Conserver une impression propre via window.print().
+
+----------------------------------------------------------------
+10. DONNÉES DE DÉMONSTRATION
+----------------------------------------------------------------
+Inclure un bouton :
+
+Charger données de démonstration
+
+Il doit charger au moins 5 joueurs fictifs avec profils variés :
+- actif et efficace,
+- actif mais inefficace,
+- peu actif mais efficace,
+- peu actif et en difficulté,
+- profil défenseur / contact.
+
+Ces données doivent permettre de tester immédiatement :
+- analyse individuelle,
+- ajout à l’équipe,
+- analyse collective,
+- génération du bilan.
+
+Ajouter aussi un bouton :
+
+Effacer les données de démonstration
+
+avec confirmation.
+
+----------------------------------------------------------------
+11. MODÈLE CSV EXACT À CONSERVER
+----------------------------------------------------------------
+Le modèle CSV attendu doit rester exactement :
+
+nom_joueur,match,classe,duree_observee,nombre_total_courses,courses_utiles,marche,trot,course_rapide,sprint,sprints_utiles,sprints_inutiles,retour_rapide,retour_moyen,retour_lent,nombre_contacts,contacts_gagnes,contacts_subis,intensite_debut,intensite_fin,chute_performance,commentaire_coach
+
+Corriger tous les boutons de téléchargement CSV pour qu’ils utilisent
+exactement ce modèle, sans anciens noms anglais comme playerName ou totalRuns.
+
+L’import CSV doit accepter :
+- une ligne avec en-têtes,
+- une ligne sans en-têtes selon l’ordre du modèle,
+- séparateur virgule,
+- séparateur point-virgule,
+- valeurs textuelles forte / moyenne / faible,
+- valeurs oui / non pour chute_performance.
+
+----------------------------------------------------------------
+12. COMPATIBILITÉ AVEC LA FICHE D’OBSERVATION
+----------------------------------------------------------------
+Vérifier la correspondance entre la fiche papier et l’application :
+
+- nom_joueur,
+- match,
+- classe,
+- durée observée,
+- nombre total de courses,
+- courses utiles,
+- marche,
+- trot,
+- course rapide,
+- sprint,
+- sprints utiles,
+- sprints inutiles,
+- retour rapide,
+- retour moyen,
+- retour lent,
+- nombre contacts,
+- contacts gagnés,
+- contacts subis,
+- intensité début,
+- intensité fin,
+- chute performance,
+- commentaire coach.
+
+Ne pas ajouter dans l’import principal des champs qui ne figurent pas sur
+la fiche papier, sauf s’ils restent facultatifs.
+
+----------------------------------------------------------------
+13. RESPONSIVE MOBILE
+----------------------------------------------------------------
+L’interface doit être utilisable sur smartphone et tablette.
+
+Vérifier l’affichage sur largeur 380 px :
+- aucun tableau ne doit déborder horizontalement,
+- boutons larges et tactiles,
+- zones de saisie lisibles,
+- vidéos redimensionnées,
+- cartes empilées verticalement,
+- navigation par onglets lisible.
+
+Pour les tableaux, prévoir :
+- overflow-x:auto si nécessaire,
+- ou transformation en cartes sur petit écran.
+
+----------------------------------------------------------------
+14. VIDÉOS COLLECTIVES
+----------------------------------------------------------------
+Conserver les vidéos démonstratives dans la partie décision d’entraînement collective.
+
+Les vidéos doivent utiliser des chemins relatifs :
+
+./assets/videos/collectif_activite.mp4
+./assets/videos/collectif_vitesse.mp4
+./assets/videos/collectif_defense.mp4
+./assets/videos/collectif_contact.mp4
+./assets/videos/collectif_endurance.mp4
+./assets/videos/collectif_lecture.mp4
+
+Si une vidéo est manquante, l’application ne doit pas se bloquer.
+Afficher simplement un message :
+« Vidéo non disponible dans cette version. »
+
+----------------------------------------------------------------
+15. MODE D’EMPLOI FINAL
+----------------------------------------------------------------
+Conserver et améliorer l’onglet Mode d’emploi.
+
+Il doit expliquer clairement :
+
+1. Télécharger la fiche d’observation.
+2. Remplir d’abord la fiche d’observation terrain pour un seul joueur
+   pendant une séquence de match.
+3. Reporter les données dans le modèle CSV.
+4. Importer ou coller le CSV dans l’application.
+5. Analyser le joueur.
+6. Ajouter le joueur à l’équipe.
+7. Répéter pour plusieurs joueurs.
+8. Analyser l’équipe.
+9. Consulter les décisions d’entraînement individuelles et collectives.
+10. Utiliser les vidéos collectives.
+11. Exporter les résultats ou la session.
+
+Inclure les boutons :
+- Télécharger la fiche d’observation PDF,
+- Télécharger la fiche en image,
+- Télécharger le modèle CSV,
+- Charger données de démonstration,
+- Exporter session JSON,
+- Importer session JSON,
+- Nouvelle session / Réinitialiser.
+
+----------------------------------------------------------------
+16. DOCUMENTATION POUR LE DÉPLOIEMENT
+----------------------------------------------------------------
+Créer un fichier README_DEPLOIEMENT.md avec :
+
+1. Présentation de l’application Rugby U15.
+2. Structure des fichiers.
+3. Instructions pour ouvrir localement.
+4. Instructions pour déployer sur GitHub Pages :
+   - créer un dépôt,
+   - placer index.html à la racine,
+   - placer assets et downloads à la racine,
+   - pousser sur la branche main,
+   - Settings → Pages,
+   - Source : Deploy from branch,
+   - Branch : main,
+   - Folder : /root.
+5. Explication des données locales et confidentialité.
+6. Explication de l’export/import JSON.
+7. Explication de l’import CSV.
+8. Limites :
+   - localStorage dépend du navigateur,
+   - les vidéos peuvent augmenter la taille du dépôt,
+   - la conversion photo → CSV doit être vérifiée par l’enseignant.
+
+----------------------------------------------------------------
+17. LIVRABLE FINAL
+----------------------------------------------------------------
+Livrer une archive ZIP prête à déposer sur GitHub contenant :
+
+- index.html
+- assets/css/style.css
+- assets/js/app.js
+- assets/videos/
+- downloads/
+- README_DEPLOIEMENT.md
+
+Le code doit être propre, commenté, sans dépendances externes obligatoires,
+sans erreur JavaScript, et compatible GitHub Pages.
+
+Avant de livrer, vérifier :
+- ouverture locale de index.html,
+- navigation par onglets,
+- import CSV,
+- analyse joueur,
+- ajout à l’équipe,
+- analyse équipe,
+- affichage des vidéos,
+- export fiche joueur,
+- export bilan collectif,
+- export CSV résultats,
+- export JSON session,
+- import JSON session,
+- reset session,
+- responsive mobile.
+
+================================================================
+ADP 2026 — CRMEF Souss-Massa — EPS — Rugby U15
